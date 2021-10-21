@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    display: flex;
+    background: #3a3838;
+    align-items: center;
+    font-family: 'Acme', Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    color: #fff;
+    box-shadow: 6px 6px 20px #777777, -6px -6px 20px #fff;
+}
+
+header div {
+    display: flex;
+}
+
+header img {
+    width: 240px;
+    margin: 5px 20px;
+}
+
+header .pesquisa {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+header .pesquisa input {
+    width: 60%;
+    height: 28px;
+    border: 0;
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 0 10px;
+    font-size: 15px;
+    background-image: url(./assets/search_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
+
+header .pesquisa p {
+    font-weight: 70;
+    margin: 0 10px 0 0;
+}
+
+header .filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px 0px 15px;
+    font-size: 24px;
+    width: 120px;
+    height: 100px;
+}
+
+header .filtro svg {
+    width: 35px;
+    margin: 0 5px 0 0;
+}
+
+svg {
+    color: #fff;
+    width: 120px;
+    height: 100px;
+}
+
+main {
+    margin: auto;
+    margin-top: 25px;
+    width: 90%;
+}
+
+main #banner img {
+    width: 100%;
+    height: 600px;
+    box-shadow: 6px 6px 20px 6px #777777, -6px -6px 20px -6px #fff;
+    border-radius: 1.5px;
+    filter: brightness(70%);
+}
+
+main #banner h3,
+main .cardapio h3 {
+    font-size: 24px;
+    font-family: 'Acme', sans-serif;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+main #quero {
+    border-radius: 4px;
+    width: 70px;
+    height: 40px;
+    background: #3a3939;
+    position: relative;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+
+}
+
+main #banner #item-promocao {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+
+    z-index: 1;
+    margin-top: -150px;
+    filter: brightness(100%);
+
+    margin-bottom: 80px;
+}
+
+main #banner #item-promocao h3 {
+    font-size: 24px;
+    font-family: 'Acme', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    width: 265px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main #banner #item-promocao button:houver {
+    background: rgb(126, 4, 4);
+}
+
+main .cardapio #itens {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main .cardapio #itens .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: solid 2px #000000;
+    border-radius: 3px;
+    width: 48%;
+    height: 150px;
+
+    margin-bottom: 10px;
+}
+
+main .cardapio #itens .card img {
+    width: 25%;
+    height: 100%;
+    border-radius: 1px;
+}
+
+main .cardapio #itens .card .descricao {
+    margin: 0 20px;
+}
+
+main .cardapio #itens .card .descricao h3,
+main .cardapio #itens .card .descricao p {
+    margin: 50px 0;
+
+    font-family: 'Acme', sans-serif;
+    color: #000;
+
+}
+
+main .cardapio #itens .card .qtd-valor {
+    font-family: 'Acme', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(214, 14, 14);
+    margin-right: 15px;
+}
+
+main .cardapio #itens .card .qtd-valor .qtd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main .cardapio #itens .card .qtd-valor .qtd p {
+    background: #c10000;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+
+    width: 30px;
+    cursor: pointer;
+}
+
+main .cardapio #itens .card .qtd-valor .qtd .sub {
+    border-radius: 5px 0 0 5px;
+    transition: 0.5s;
+}
+
+main .cardapio #itens .card .qtd-valor .qtd .quantia {
+    background: #999999;
+
+    cursor: de;
+}
+
+main .cardapio #itens .card .qtd-valor .qtd .add {
+    border-radius: 0 5px 5px 0;
+    transition: 0.5s;
+}
+
+main .cardapio #itens .card .qtd-valor .qtd .sub:hover,
+main .cardapio #itens .card .qtd-valor .qtd .add:hover {
+    background: #e77878;
+}
+
+footer #logo img {
+    width: 250px;
+    margin-left: 15px;
+
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #3a3838;
+    padding: 20px 0;
+
+    box-shadow: 1px 1px 20px 1px #302f2f, -6px -6px 20px -6px #fff;
+}
+
+footer #links img {
+    width: 40px;
+
+    margin-top: 5px;
+    margin-left: -150px;
+
+    cursor: pointer;
+}
+
+footer #pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-family: 'Acme';
+    font-size: 20px;
+
+    margin-left: -250px;
+}
+
+footer #pedido h3,
+p {
+    padding: 3px 0
+}
+
+footer #pedido button {
+    border: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Acme';
+
+    transition: 0.5s;
+}
+
+footer #pedido #pedir:hover {
+    background: rgb(122, 119, 119);
+}
+
+footer #pedido #cadastrar:hover {
+    background: rgb(122, 119, 119);
+}
+
+footer #pedido input{
+    width: 350px;
+    height: 40px;
+    
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    
+    font-size: 18px;
+    padding-left: 10px;
+    color: #2e1515;
+
+    background-image: url(./assets/outline_email_black_24dp.png);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+    background-size: 25px;
+}
+
+footer #pedido img {
+    width: 26.7567px;
+}
+
+footer #links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
